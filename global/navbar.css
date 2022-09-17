@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    position:sticky;
+    top:0;
+
+
+    align-content: center;
+    justify-content: space-between;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    background-color: #0D0D0D;
+}
+
+.navbar .right {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.navbar .left {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.navbar .right   p {
+    margin-left: 1.2rem;
+    color: #ffffff;
+}
