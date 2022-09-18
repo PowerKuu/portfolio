@@ -1,14 +1,55 @@
+:root {
+    --primary: #FFFFFF;
+    --contrast: #0D0D0D;
+    --pop: #0A40FF;
+}
+
+.star img {
+    transition: 0.5s;
+    filter: invert(21%) sepia(96%) brightness(0%) saturate(6521%) hue-rotate(233deg) contrast(106%);
+}
+
+/*make keyframe with oppacit !or not*/ 
+
+.star:hover img {
+    filter: invert(21%) sepia(96%) brightness(100%) saturate(6521%) hue-rotate(233deg) contrast(106%);
+}
+
 .star p {
     color: black;
     position: relative;
     display: flex;
-    left: 30px;
-    bottom: 50px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+    left: 2rem;
+    bottom: 4rem;
+}
+
+.star .name {
+    font-size: 1rem;
+}
+
+.star .subname {
+    font-size: 0.9rem;
 }
 
 .star img {
-    color: black;
+ 
 }
+
+.star .icon {
+    height: 2rem;
+    width: 2rem;
+}
+
+.star .line {
+    position: relative;
+    right: 1.3rem;
+    bottom: 1rem;    
+    height: 1.7rem;
+}
+
 
 .star.active {
     
