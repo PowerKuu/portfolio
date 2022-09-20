@@ -6,7 +6,7 @@
 
 html {
   font-family: 'Inter', sans-serif;
-  font-size: 19px;
+  font-size: 20px;
 }
 
 body, p {
@@ -18,5 +18,5 @@ body, p {
 * {
   color: #FFFFFF;
   font-size: 1rem;
-  font-weight: 200;
+  font-weight: 300;
 }

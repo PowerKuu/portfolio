@@ -5,8 +5,8 @@
 }
 
 .content {
-    padding: 17rem;
-    padding-top: 5rem;
+    padding: 8rem;
+    padding-top: 8rem;
 }
 
 .front {
@@ -24,10 +24,18 @@
 
 .front .right {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .heading {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    margin-left: -0.2rem;
+}
+
+.subheading {
+    font-size: 1.2rem;
 }
 
 .heading, .subheading, .summery {

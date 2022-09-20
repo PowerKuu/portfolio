@@ -3,11 +3,13 @@
     position:sticky;
     top:0;
 
+    z-index: 100;
+
 
     align-content: center;
     justify-content: space-between;
-    padding-left: 17rem;
-    padding-right: 17rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
 
