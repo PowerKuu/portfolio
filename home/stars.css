@@ -41,10 +41,9 @@
 }
 
 .star p {
+    opacity: 0;
     transition: opacity 0.5s ease-in-out;
 
-
-    opacity: 0;
     color: black;
     position: relative;
     display: flex;
@@ -69,10 +68,11 @@
     width: 2rem;
 }
 
+
 .star .line {
+    opacity: 0;
     transition: opacity 0.6s ease-in-out;
 
-    opacity: 0;
     position: relative;
     left: 1rem;
     bottom: 3rem;    

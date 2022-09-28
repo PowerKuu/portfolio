@@ -3,25 +3,35 @@
     visibility: hidden;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (min-width: 1600px) {
+    .aboutme .text {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .aboutme .text {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+
+@media screen and (max-width: 1320px) {
     html {
-        font-size: 15px;
+        font-size: 16px;
     }
 }
 
 @media screen and (max-width: 1068px) {
     html {
-        font-size: 14px;
+        font-size: 15px;
     }
 }
 
-@media screen and (max-width: 938px) {
-    html {
-        font-size: 13px;
-    }
-}
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1000px) {
     html {
         font-size: 16px;
     }
@@ -44,6 +54,11 @@
     .bottom {
         padding-left: 7rem;
         padding-right: 7rem;
+    }
+
+    .aboutme .text {
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 }
 

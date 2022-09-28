@@ -14,7 +14,7 @@ function AddStar(name, repo, x, y){
         <div class="star" style="   bottom: ${y}rem; right: ${x}rem;" id="${uuid}">
             <img src="./images/star.svg" alt="" class="icon">
             <img src="./images/line.svg" alt="" class="line">
-            <p class="name">${name.toUpperCase().substring(0, 10    )}</p>
+            <p class="name">${name.toUpperCase().substring(0, 10)}</p>
             <p class="subname">CLICK ME</p>
         </div>
     `
