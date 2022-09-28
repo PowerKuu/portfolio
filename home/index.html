@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../global/navbar.css">
 
     <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./responsive.css">
     <link rel="stylesheet" href="./stars.css">
 
     <script src="./index.js" defer></script>
@@ -17,15 +18,19 @@
 <body>
     <div class="navbar">
         <div class="left">
-            <p>Håkon Kleven</p>
-        </div>
+            <p id="name">Håkon Kleven</p>
+        </div>  
         <div class="right">
-            <p style="text-decoration: underline;">Hjem</p>
-            <p>Om-Skolen</p>
-            <p>Om-Meg</p>
-            <p>GitHub</p>
+            <a href="#home">Hjem</a>
+            <a href="#me">Meg</a>
+
+            <a href="https://github.com/PowerKuu">
+                <img src="./images/icons/github.svg" class="github" alt="">
+            </a>
         </div>
     </div>
+
+    <a id="home"></a>
 
     <div class="content">
         <div class="front">
@@ -33,18 +38,74 @@
                 <p class="heading">Håkon Kleven</p>
                 <p class="subheading">Fra IM linjen.</p>
                 <p class="summery">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                <p class="learnmore" type="submit">Lær mer</p>
+                <p class="learnmore" id="learnmore" type="submit">Lær mer</p>
             </div>
-            
+        
             <div class="right">
-                <img src="./moon.svg" alt="" class="moon">
+                <img src="./images/moon.svg" alt="" class="moon">
                 <div class="stars" id="stars">
 
                 </div>
             </div>
         </div>
     </div>
+    
+<img src="./images/curve.svg" alt="" class="curve">
 
-    <!--Image of planet-->
+    <a id="me"></a>
+
+    <div class="background">
+        <div class="bottom">
+            <div class="aboutme">
+                <p class="title">Om meg</p>
+                <img src="./images/arrow1.svg" alt="" class="down-arrow">
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut Lorem ipsum dolor sit amet, consectetur adipiscing eli </p>
+            </div>
+
+            <div class="competence">
+                <p class="title">Kompetanse</p>
+                <img src="./images/arrow1.svg" alt="" class="down-arrow cond1">
+                <div class="distribute">
+                    <div>
+                        <p class="subtitle">Web Design</p>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.</p>
+                        
+                        <div class="icons">
+                            <img src="./images/icons/adobe.svg" alt="">
+                            <img src="./images/icons/figma.svg" alt="">
+                        </div>
+                    </div>
+
+                    <img src="./images/arrow2.svg" alt="" class="arrow">
+
+                    <div>
+                        <p class="subtitle">Utvikler</p>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.</p>
+                        
+                        <div class="icons">
+                            <img src="./images/icons/js.svg" alt="">
+                            <img src="./images/icons/python.svg" alt="">
+                            <img src="./images/icons/c-sharp.svg" alt="">
+                        </div>
+                    </div>                
+                </div>
+            </div>
+
+
+            <div class="contact">
+                <div class="info">
+                    <div>
+                        <span>TLF:</span>
+                        <a href="tel:+4740345959" class="link">+47 40345959</a>
+                    </div>
+                    <div>
+                        <span>EPOST:</span>
+                        <a href="mailto:hkleven6@gmail.com" class="link">hkleven6@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

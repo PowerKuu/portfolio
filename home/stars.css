@@ -21,11 +21,22 @@
     filter: invert(21%) sepia(96%) brightness(0%) saturate(6521%) hue-rotate(233deg) contrast(106%) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.44));
 }
 
+.star .icon:hover {
+    cursor: pointer;
+}
+
 .star .icon:hover ~ .line, .star .icon:hover {
     filter: invert(21%) sepia(96%) brightness(100%) saturate(6521%) hue-rotate(233deg) contrast(106%) drop-shadow(0px 4px 6px var(--pop));
 }
 
 .star .icon:hover ~ .line, .star .icon:hover ~ p {
+    opacity: 1;
+}
+
+.star.active .line, .star.active .icon {
+    filter: invert(21%) sepia(96%) brightness(100%) saturate(6521%) hue-rotate(233deg) contrast(106%) drop-shadow(0px 4px 6px var(--pop));
+}
+.star.active .line, .star.active p {
     opacity: 1;
 }
 
@@ -53,22 +64,19 @@
 }
 
 .star .icon {
-    transition: filter 0.2s ease-in-out;
+    transition: filter 0.4s ease-in-out;
     height: 2rem;
     width: 2rem;
 }
 
 .star .line {
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.6s ease-in-out;
 
     opacity: 0;
     position: relative;
     left: 1rem;
     bottom: 3rem;    
     height: 1.7rem;
-}
 
-
-.star.active {
-    
+    z-index: -1 ;
 }

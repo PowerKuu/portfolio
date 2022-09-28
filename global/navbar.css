@@ -1,6 +1,8 @@
 .navbar {
     display: flex;
-    position:sticky;
+    position: fixed;
+
+    width: 100%;
     top:0;
 
     z-index: 100;
@@ -8,8 +10,6 @@
 
     align-content: center;
     justify-content: space-between;
-    padding-left: 8rem;
-    padding-right: 8rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
 
@@ -17,18 +17,38 @@
 }
 
 .navbar .right {
+    margin-right: 8rem;
+
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
 .navbar .left {
+    margin-left: 8rem;
+
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
-.navbar .right   p {
+.navbar p, .navbar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .right a, .navbar .right p {
+    text-decoration: none;
     margin-left: 1.2rem;
     color: #ffffff;
+}
+
+.navbar .right a:hover, .navbar .right p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.github {
+    height: 1.5rem;
 }

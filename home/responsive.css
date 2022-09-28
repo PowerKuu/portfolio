@@ -1,0 +1,193 @@
+.cond1 {
+    display: none;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 1300px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1068px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 938px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    html {
+        font-size: 16px;
+    }
+
+    .front .right {
+        display: none;
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .front .left {
+        width: 100%;
+    }
+
+    .front {
+        align-content: center;
+        justify-content: center;
+    }
+
+    .bottom {
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+}
+
+
+@media screen and (max-width: 795px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 771px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .competence .distribute {
+        padding: 5rem;
+        padding-top: 1rem;
+        padding-bottom: 0;
+    }
+
+    .competence .distribute {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .competence .distribute .arrow {
+        display: none;
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .competence .subtitle {
+        margin-top: 0;
+    }
+
+    .down-arrow {
+        height: 2.4rem;   
+    }
+
+    .cond1 {
+        visibility: visible;
+        display: unset;
+    }
+}
+
+
+@media screen and (max-width: 710px) {
+    .content {
+        padding-bottom: 5rem;
+    }
+
+    .competence .distribute {
+        padding: 3rem;
+        padding-top: 1rem;
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .content {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .bottom {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .navbar .right{
+        margin-right: 5rem;
+    }
+
+    .navbar .left{
+        margin-left: 5rem;
+    }
+}
+
+
+@media screen and (max-width: 477px) {
+    html {
+        font-size: 15px;
+    }
+
+    .heading {
+        font-size: 3.2rem;
+    }
+    /*
+    .navbar {
+        justify-content: flex-start;
+    }
+
+    .navbar .right a, .navbar .right p {
+        margin-left: 0;
+        margin-right: 1.2rem;
+    }
+
+    .navbar .left {
+        display: none;
+    }
+    */
+
+    .content {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .bottom {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .navbar .right{
+        margin-right: 3rem;
+    }
+
+    .navbar .left{
+        margin-left: 3rem;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    html {
+        font-size: 15px;
+    }
+
+    .heading {
+        font-size: 2.8rem;
+    }
+
+    .competence .distribute {
+        padding: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 355px) {
+    html {
+        font-size: 15px;
+    }
+
+    .heading {
+        font-size: 2.6rem;
+    }
+}
