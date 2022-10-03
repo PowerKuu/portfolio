@@ -4,7 +4,11 @@
     --pop: #0A40FF;
 }
 
-body{animation: 1.5s ease-out 0s 1 FadeIn;}
+body{
+    background: #FFFFFF;
+    animation: 1.5s ease-out 0s 1 FadeIn;
+}
+
 @keyframes FadeIn {
     0% {
       opacity:0;
@@ -13,6 +17,8 @@ body{animation: 1.5s ease-out 0s 1 FadeIn;}
       opacity:1;
     }
 }
+
+
 
 .link {
     text-decoration: underline;
