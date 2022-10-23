@@ -93,6 +93,7 @@ async function init() {
 init()
 
 document.getElementById("learnmore").onclick = () => {
+    console.log("helo")
     window.location.href = "#me"
 }
 
@@ -110,3 +111,22 @@ function ChangeNavbarName(x) {
 var x = window.matchMedia("(max-width: 477px)")
 ChangeNavbarName(x)
 x.addEventListener("change", ChangeNavbarName)
+
+
+
+// Parallax effect
+const contentElement = document.getElementById("parallax")
+const starsElement = document.getElementById("stars")
+
+const offset = (element, dev) => {
+    const offest = document.documentElement.scrollTop / dev
+    element.style.transform = `translateY(${offest}rem)`
+}
+
+offset(contentElement, 50)
+offset(starsElement, -1000)
+
+window.onscroll = () => {
+    offset(contentElement, 50)
+    offset(starsElement, -1000)
+}
