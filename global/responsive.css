@@ -63,6 +63,26 @@
     }
 }
 
+@media screen and (max-width: 930px) {
+    .container {
+        height: unset;
+        flex-direction: column ;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .container .image {
+        height: 20rem;
+        width: unset;
+    }
+
+    .reverse {
+        flex-direction:column-reverse;
+    }
+}
+
 
 @media screen and (max-width: 795px) {
     html {
@@ -134,6 +154,11 @@
         padding-right: 5rem;
     }
 
+    .containers {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
     .bottom {
         padding-left: 5rem;
         padding-right: 5rem;
@@ -171,6 +196,11 @@
         padding-right: 3rem;
     }
 
+    .containers {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
     .bottom {
         padding-left: 3rem;
         padding-right: 3rem;
@@ -182,6 +212,10 @@
 
     .navbar .left{
         margin-left: 3rem;
+    }
+
+    .container .image {
+        height: 15rem;
     }
 }
 
@@ -215,5 +249,22 @@
     .content {
         padding-left: 2rem;
         padding-right: 2rem;
+    }
+
+    .containers {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .navbar .right{
+        margin-right: 2rem;
+    }
+
+    .navbar .left{
+        margin-left: 2rem;
+    }
+
+    .infohead {
+        font-size: 2rem;
     }
 }

@@ -5,7 +5,25 @@
 }
 
 
+body{
+  height: 100%;
+  animation: 1.5s ease-out 0s 1 FadeIn;
+}
+
+
+@keyframes FadeIn {
+  0% {
+    opacity:0;
+  }
+
+  100% {
+    opacity:1;
+  }
+}
+
+
 html, body {
+  background-color: #FFFFFF;
   margin: 0;
   padding: 0;
 
@@ -17,8 +35,6 @@ html, body {
 html {
   font-family: 'Inter', sans-serif;
   font-size: 20px;
-
-  background-color: #0D0D0D;
 }
 
 

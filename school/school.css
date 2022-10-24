@@ -1,0 +1,44 @@
+.containers {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    flex-direction: column;
+
+    padding: 8rem;
+    padding-top: 10rem;
+
+    gap: 4rem;
+}
+
+.containers * {
+    color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 15rem;
+    gap: 4rem;
+}
+
+.container .image {
+    width: 50%;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+}   
+
+.info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+}
+
+.infohead {
+    font-size: 3rem;
+}

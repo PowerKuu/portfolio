@@ -4,23 +4,9 @@
     --pop: #0A40FF;
 }
 
-body{
-    background: #FFFFFF;
-    animation: 1.5s ease-out 0s 1 FadeIn;
+html {
+    background-color: var(--contrast);
 }
-
-
-@keyframes FadeIn {
-    0% {
-      opacity:0;
-    }
-
-    100% {
-      opacity:1;
-    }
-}
-
-
 
 .link {
     text-decoration: underline;
@@ -111,8 +97,8 @@ body{
 }
 
 .background {
-    margin-top: -20%;
-    background-color: #0D0D0D; 
+    margin-top: -10%;
+    background-color: var(--contrast); 
     width: 100%;
     position: absolute; 
     z-index: 10; 

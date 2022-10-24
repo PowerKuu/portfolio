@@ -12,8 +12,8 @@ function AddStar(name, repo, x, y){
 
     const html = `
         <div class="star" style="   bottom: ${y}rem; right: ${x}rem;" id="${uuid}">
-            <img src="./images/star.svg" alt="" class="icon">
-            <img src="./images/line.svg" alt="" class="line">
+            <img src="../global/images/star.svg" alt="" class="icon">
+            <img src="../global/images/line.svg" alt="" class="line">
             <p class="name">${name.toUpperCase().substring(0, 10)}</p>
             <p class="subname">CLICK ME</p>
         </div>
@@ -93,25 +93,8 @@ async function init() {
 init()
 
 document.getElementById("learnmore").onclick = () => {
-    console.log("helo")
     window.location.href = "#me"
 }
-
-const NavbarName = document.getElementById("name")
-
-function ChangeNavbarName(x) {
-    console.log(x)
-    if (x.matches) {
-        NavbarName.innerText = "HK"
-    } else {
-        NavbarName.innerText = "Håkon Kleven"
-    }
-}
-  
-var x = window.matchMedia("(max-width: 477px)")
-ChangeNavbarName(x)
-x.addEventListener("change", ChangeNavbarName)
-
 
 
 // Parallax effect
@@ -123,10 +106,10 @@ const offset = (element, dev) => {
     element.style.transform = `translateY(${offest}rem)`
 }
 
-offset(contentElement, 50)
+offset(contentElement, 60)
 offset(starsElement, -1000)
 
 window.onscroll = () => {
-    offset(contentElement, 50)
+    offset(contentElement, 60)
     offset(starsElement, -1000)
 }
