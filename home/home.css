@@ -9,10 +9,12 @@ body{
     animation: 1.5s ease-out 0s 1 FadeIn;
 }
 
+
 @keyframes FadeIn {
     0% {
       opacity:0;
     }
+
     100% {
       opacity:1;
     }
@@ -84,7 +86,7 @@ body{
 
     border-radius: 30px;
 
-    z-index: 1;
+    z-index: 10;
 }
 
 .learnmore:hover {
@@ -94,9 +96,18 @@ body{
 
 
 .curve {
-    position: static;
+    position: relative;
     width: 100%;
-    z-index: 0;
+    z-index: 1;
+}
+
+.mewrap {
+    width: 100%;
+}
+.me {
+    position: relative;
+    transform: translateX(700%);
+    top: 4rem;
 }
 
 .background {
@@ -104,7 +115,7 @@ body{
     background-color: #0D0D0D; 
     width: 100%;
     position: absolute; 
-    z-index: 0; 
+    z-index: 10; 
 }
 
 .bottom {
