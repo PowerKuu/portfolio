@@ -102,14 +102,18 @@ const contentElement = document.getElementById("parallax")
 const starsElement = document.getElementById("stars")
 
 const offset = (element, dev) => {
-    const offest = document.documentElement.scrollTop / dev
-    element.style.transform = `translateY(${offest}rem)`
+    const offest = document.documentElement.scrollTop * dev
+    element.style.transform = `translateY(${offest}px)`
 }
 
-offset(contentElement, 60)
-offset(starsElement, -1000)
+function UpdateParallax(){
+    const contentFactor = 0.3 + (Math.max((window.innerHeight - window.innerWidth), 0) / 20000)
+    console.log(contentFactor)
+    const startFactor = 0
 
-window.onscroll = () => {
-    offset(contentElement, 60)
-    offset(starsElement, -1000)
+    offset(contentElement, contentFactor)
+    offset(starsElement, startFactor)
 }
+
+UpdateParallax()
+window.onscroll = UpdateParallax

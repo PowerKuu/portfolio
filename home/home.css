@@ -97,7 +97,7 @@ html {
 }
 
 .background {
-    margin-top: -10%;
+    margin-top: -20%;
     background-color: var(--contrast); 
     width: 100%;
     position: absolute; 
