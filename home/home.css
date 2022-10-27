@@ -18,7 +18,7 @@ html {
 
 .content {
     padding: 8rem;
-    padding-top: 10rem;
+    padding-top: 13rem;
     padding-bottom: 0;
     margin-bottom: -10%;
 }
@@ -119,6 +119,11 @@ html {
     margin-bottom: 5rem;
 }
 
+.aboutme .text {
+    padding-left: 14rem;
+    padding-right: 14rem;
+}
+
 .down-arrow {
     margin: 0.5rem;
     height: 2.4rem;
@@ -137,7 +142,10 @@ html {
 .competence .distribute {
     display: flex;
     flex-direction: row;
-    align-content: space-between;
+}
+
+.competence .distribute div {
+    flex: 1;
 }
 
 .competence .subtitle {

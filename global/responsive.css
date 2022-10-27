@@ -9,21 +9,20 @@
     }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (max-width: 1620px) {
     .aboutme .text {
         padding-left: 10rem;
         padding-right: 10rem;
     }
 }
 
-@media screen and (min-width: 1000px) {
+
+@media screen and (max-width: 1420px) {
     .aboutme .text {
-        padding-left: 5rem;
-        padding-right: 5rem;
+        padding-left: 8rem;
+        padding-right: 8rem;
     }
-
 }
-
 
 @media screen and (max-width: 1320px) {
     html {
@@ -34,6 +33,11 @@
 @media screen and (max-width: 1068px) {
     html {
         font-size: 15px;
+    }
+
+    .aboutme .text {
+        padding-left: 7rem;
+        padding-right: 7rem;
     }
 }
 
@@ -117,7 +121,7 @@
 
     .competence .distribute {
         flex-direction: column;
-        gap: 2rem;
+        gap: 4rem;
     }
 
     .competence .distribute .arrow {
@@ -243,6 +247,11 @@
         padding-top: 1rem;
         padding-bottom: 0;
     }
+
+    .bottom {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 }
 
 @media screen and (max-width: 370px) {
@@ -280,5 +289,10 @@
 
     .infohead {
         font-size: 2rem;
+    }
+    
+    .bottom {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }

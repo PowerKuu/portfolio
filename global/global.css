@@ -42,8 +42,17 @@ p {
   margin: 0;
 }
 
+a {
+  color: rgb(75, 105, 255) !important;
+}
+
 * {
   color: #FFFFFF;
   font-size: 1rem;
   font-weight: 300;
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
 }

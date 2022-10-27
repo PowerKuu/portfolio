@@ -38,6 +38,11 @@
     align-items: center;
 }
 
+.navbar a {
+    color: #ffffff !important;
+}
+
+
 .navbar .right a, .navbar .right p {
     text-decoration: none;
     margin-left: 1.2rem;
