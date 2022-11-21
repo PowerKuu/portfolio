@@ -3,6 +3,31 @@
     visibility: hidden;
 }
 
+
+/* Projects */
+
+@media screen and (min-width: 700px) {
+    .projects {
+        grid-template-columns: 1fr 1fr 1fr;
+    }    
+}
+
+
+@media screen and (max-width: 700px) {
+    .projects {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .projects {
+        grid-template-columns: 1fr;
+    }    
+}
+
+
+
+
 @media screen and (min-width: 1700px) {
     .me {
         top: 5rem;

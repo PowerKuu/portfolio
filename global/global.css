@@ -1,9 +1,14 @@
+:root {
+  --primary: #FFFFFF;
+  --contrast: #0D0D0D;
+  --pop: #0A40FF;
+}
+
 @import url('https://rsms.me/inter/inter.css');
 
 @supports (font-variation-settings: normal) {
   html { font-family: 'Inter var', sans-serif; }
 }
-
 
 body{
   height: 100%;
@@ -55,4 +60,33 @@ a {
 img {
   user-select: none;
   -webkit-user-drag: none;
+}
+
+.content {
+  padding: 8rem;
+  padding-top: 13rem;
+  padding-bottom: 0;
+  margin-bottom: -10%;
+}
+
+.calltoaction {
+  color: white !important;
+  transition: 0.4s;
+  margin-top: 2rem;
+
+  border: 0;
+  background-color: var(--pop);
+  padding: 0.4rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+
+  border-radius: 30px;
+
+  position: relative;
+  z-index: 1000;
+}
+
+.calltoaction:hover {
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 8px var(--pop))
 }

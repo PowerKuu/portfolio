@@ -1,5 +1,7 @@
 const NavbarName = document.getElementById("name")
 
+NavbarName.onclick = () => window.location.href = "/home#home"
+
 function ChangeNavbarName(x) {
     if (x.matches) {
         NavbarName.innerText = "HK"

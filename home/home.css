@@ -1,9 +1,3 @@
-:root {
-    --primary: #FFFFFF;
-    --contrast: #0D0D0D;
-    --pop: #0A40FF;
-}
-
 html {
     background-color: var(--contrast);
 }
@@ -14,13 +8,6 @@ html {
 
 .link:hover {
     cursor: pointer;
-}
-
-.content {
-    padding: 8rem;
-    padding-top: 13rem;
-    padding-bottom: 0;
-    margin-bottom: -10%;
 }
 
 .front {
@@ -58,26 +45,6 @@ html {
 
 .summery {
     margin-top: 1.5rem;
-}
-
-.learnmore {
-    transition: 0.4s;
-    margin-top: 2rem;
-
-    border: 0;
-    background-color: var(--pop);
-    padding: 0.4rem;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-
-    border-radius: 30px;
-
-    z-index: 10;
-}
-
-.learnmore:hover {
-    cursor: pointer;
-    filter: drop-shadow(0px 0px 8px #0A40FF)
 }
 
 
