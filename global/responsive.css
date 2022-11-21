@@ -101,11 +101,13 @@
 @media screen and (max-width: 930px) {
     .container {
         height: unset;
-        flex-direction: column ;
+        flex-direction: column;
+        gap: 0;
     }
 
     .info {
         width: 100%;
+        margin-bottom: 3rem;
     }
 
     .container .image {
