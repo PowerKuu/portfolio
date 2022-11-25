@@ -4,7 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <meta name="author" content="Håkon Kleven">
+    <meta name="description" content="Håkon - min personlige nettside. Litt om meg og min erfaring som utvikler.">
+    <meta name="keywords" content="Håkon Kleven, Håkon, Amalie, Skram, Skole, It, Informasjonsteknologi, medieproduksjon, ZoneWarz, programerer">
+    <title>Håkon - Kroppsøving video</title>
+
+    
+    <link rel="stylesheet" href="/global/global.css">
+    <link rel="stylesheet" href="/global/navbar.css">
+
+    <link rel="stylesheet" href="/global/responsive.css">
+
+    <script src="/global/navbar.js" defer></script>
+    <script src="/global/global.js" defer></script>
+
 
     <style>
         body, html {
@@ -14,16 +28,26 @@
             overflow: hidden;
         }
 
-        video {
+        .yt {
             width: 100%;
             height: 100%;
         }
     </style>
 </head>
-<body>  
-    <video id="video" playsinline controls="true">
-        <source src="https://www.dropbox.com/s/ie010q2gta13wzi/TreningsVideo.mp4?dl=1" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+<body>      
+    <nav class="navbar">
+        <div class="left">
+            <p id="name">Håkon Kleven</p>
+        </div>  
+        <div class="right">
+            <a href="/school" style="text-decoration: underline;">Skolen</a>
+            <a href="/projects/">Prosjekter</a>
+            <a href="/home#home">Hjem</a>
+            <a href="https://github.com/PowerKuu">
+                <img src="/global/images/icons/github.svg" class="github" alt="">
+            </a>
+        </div>
+    </nav>
+    <iframe class="yt" src="https://www.youtube.com/embed/YF2IS8Sqvk4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </body>
 </html>
