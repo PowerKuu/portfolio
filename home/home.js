@@ -64,8 +64,6 @@ async function FetchGithubRepos(url){
         return b.stargazers_count-a.stargazers_count
     }).splice(0, positions.length)
 
-    console.log(sorted)
-
     var index = 0
     for (var repo of sorted){
         AddStar(repo.name, repo.html_url, positions[index][0], positions[index][1])
@@ -108,7 +106,6 @@ const offset = (element, dev) => {
 
 function UpdateParallax(){
     const contentFactor = 0.3 + (Math.max((window.innerHeight - window.innerWidth), 0) / 20000)
-    console.log(contentFactor)
     const startFactor = 0
 
     offset(contentElement, contentFactor)
